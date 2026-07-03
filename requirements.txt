@@ -1,0 +1,9 @@
+phidata
+python-dotenv
+chainlit
+PyMySQL
+cryptography
+sqlalchemy
+ollama
+psycopg2-binary
+openai
