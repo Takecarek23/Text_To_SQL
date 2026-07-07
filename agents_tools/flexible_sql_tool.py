@@ -21,11 +21,11 @@ class FlexibleSQLTool(Toolkit):
     # Sử dụng kiểu str cho biến limit để bộ tạo Schema của Phi Data không bị lỗi 'type'
     def use(self, sql: str, format: str = "table", limit: Optional[str] = None) -> str:
         """
-        Выполняет SQL-запрос и возвращает результат как таблицу или краткую сводку.
-        :param sql: SQL-запрос
+        Executes an SQL query and returns the result as a table or a brief summary.
+        :param sql: SQL query
         :param format: 'table' | 'summary'
-        :param limit: ограничение по числу строк
-        :return: строка с результатом
+        :param limit: row limit
+        :return: string containing the result
         """
         # SỬA LỖI 1: Xử lý trường hợp AI truyền vào chuỗi rỗng '' thay vì số nguyên
         parsed_limit = None
