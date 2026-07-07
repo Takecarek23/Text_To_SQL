@@ -183,7 +183,6 @@ async def on_message(message: cl.Message):
     try:
         chunks = []
         try:
-            # LỚP BẢO VỆ: Bắt lỗi sập ngầm từ bên trong lõi Phi Data
             result = await cl.make_async(agent.run)(content, stream=True)
             for chunk in result:
                 chunks.append(chunk.get_content_as_string())
